@@ -45,8 +45,9 @@ header {
   background-color: #014f80;
   height: 47vh;
   width: 100%;
-  z-index: 12;
-  background-image: url(../images/main/Cover\ big\ web\ 50.jpg);
+  z-index: -100;
+  /* background-image: url(../images/main/Cover\ big\ web\ 50.jpg); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.775) 0%, rgba(0, 0, 0, 0) 50%),  url(../images/main/Cover\ big\ web\ 50.jpg);
   background-repeat: no-repeat;
   background-size: none;
   background-position: bottom center;

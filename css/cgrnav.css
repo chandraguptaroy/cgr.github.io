@@ -56,12 +56,12 @@ label{display: none;}
         top: -100%;
         left: 0;
         background: linear-gradient(rgba(0, 0, 0, 0.97) 0%, rgba(0, 0, 0, 0.99) 100%);
-        height: 50vh;
+        height: 70vh;
         width: 100%;
         display: block;
         padding: 5%;
         text-align: center;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease-in-out;
     }
     #click:checked ~ ul{
         top: 80px;
@@ -94,4 +94,7 @@ label{display: none;}
     #click:checked ~ ul{
         top: 120px;
     }
-}
+    #click:checked ~ nav {
+        background-color: black;
+    }
+    }

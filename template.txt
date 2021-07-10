@@ -14,6 +14,8 @@ style="width: 500px; max-width: 100%; height: auto"
 title="Click for the larger version." />
 
 
+Backgrounds with gradient overlay: background-image: linear-gradient(rgba(0, 0, 0, 0.775), rgba(0, 0, 0, 0.122)),  url(images/howtowhatsapp/bgbg.jpg);
+
 Buttons with hover hr effect: *link all.css for this to work  <link rel="stylesheet" href="../css/all.css">
                 <!--Button-->
                 <div class="btn">
