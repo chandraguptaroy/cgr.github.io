@@ -20,6 +20,7 @@
            background-size: cover;
            background-repeat: no-repeat;
            background-attachment: fixed;
+           height: 400px;
        }
        .fot-wrapper{
             padding: 20px;
@@ -31,6 +32,7 @@
            flex-flow: row wrap;
            justify-content: center;
            margin: 10px 0;
+           height: 250px;
        }
        .fot-col{
            position: relative;
@@ -41,6 +43,7 @@
            transition: 0.3s ease;
            text-align: center;
            border-radius: 5px;
+           height: 200px;
        }
        .fot-col:first-child{
            background: linear-gradient(135deg, #066f00 -30%, #01e601 100%);
@@ -56,6 +59,7 @@
             top: 0;
             height: 100%;
             width: 100%;
+            z-index: 1;
         }
         .fot-col:nth-child(2)::before{
             clip-path:polygon(10% -13%, -13% 20%, 30% 80%, 40% 100%) ;
@@ -71,25 +75,51 @@
             clip-path: circle(10% at left 20%);
             background: linear-gradient(135deg, #066f00 0%, #01e601 35%);}
         .fot-col-top{
+            position: relative;
             padding-top: 7px;
             padding-bottom: 10px;
             border-radius: 10px;
             background: rgba(174, 103, 103, 0.25);
-            backdrop-filter: blur(5px);
             box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.408);
             border-left: 1px solid rgba(255,255, 255, 0.5);
             border-top: 1px solid rgba(255,255, 255, 0.5);
             transition: all 0.3 ease;
+            z-index: 2;
+            filter: blur(2px);
+            height: 90%;
+       }
+       .fot-content{
+           position: absolute;
+           z-index: 3;
+           top: 20px;
        }
        .fot-col-top:hover{
             box-shadow: 0px 0px 55px 5px rgba(0, 0, 0, 0.653);
             transition: all 0.3 ease;
        }
-       
-      
-       @media screen and (max-width: 540px) {
-           
+
+       .fot-social i{
+           font-size: 25px;
+           color: #fff;
+           height: 45px;
+           width: 45px;
+           background-color: black;
+           border-radius: 50%;
+           border: 2px solid #fff;
+           line-height: 45px;
+           margin: 14px 5px;
+           transition: all 0.3s ease;
+           text-align: center;
        }
+       @media screen and (max-width: 540px) {
+           .fot-cols{
+               flex-wrap: wrap;
+               flex-direction: column;}
+            .fot-wrapper{
+                padding-left: 1%;
+                padding-right: 1%;
+            }
+           }
     </style>
 </head>
 <body>
@@ -97,32 +127,46 @@
         <div class="fot-wrapper">
             <section class="fot-cols">
                 <div class="fot-col">
-                    <div class="fot-col-top">
-                        <img style="width: 25%;border-radius: 50%;" src="../images/main/eduv.jpg">
-                        <h2>Eduv</h2>
-                        <p><i>Educational Videos with Industry Level Editing</i></p>
+                    <div class="fot-col-top"></div>
+                        <div class="fot-content">
+                            <img style="width: 25%;border-radius: 50%;" src="../images/main/eduv.jpg">
+                            <h2>Eduv</h2>
+                            <p><i>Educational Videos with Industry Level Editing</i></p>
+                        
                     </div>
                 </div>
                 <div class="fot-col">
-                    <div class="fot-col-top">
-                        <img style="width: 25%;border-radius: 50%;" src="../images/main/chandu.png">
-                        <h2>CGR</h2>
-                        <p>Vlogs | How-to's | Reviews </p>
-                    </div>
+                    <div class="fot-col-top"></div>
+                        <div class="fot-content">
+                            <img style="width: 25%;border-radius: 50%;" src="../images/main/chandu.png">
+                            <h2>CGR</h2>
+                            <p>Vlogs | How-to's | Reviews </p>
+                        </div>
+                    
                 </div>
                 <div class="fot-col">
-                    <div class="fot-col-top">
-                        <img style="width: 25%;border-radius: 50%;" src="../images/main/why it.jpg">
-                        <h2>Whyit</h2>
-                        <p>Exploration of Reasoning</p>
-                    </div>
-                </div>
+                    <div class="fot-col-top"></div>
+                        <div class="fot-content">
+                            <img style="width: 25%;border-radius: 50%;" src="../images/main/why it.jpg">
+                            <h2>Whyit</h2>
+                            <p>Exploration of Reasoning</p>
+                        </div>
+                </div> 
             </section>
+        </div>
             <div class="fot-second">
                 <hr color=white width="10%" size="1px" />
                 <p style="text-align: center;color: white;">Chandra Gupta Roy | @chandraguptaroy</p>
-            </section>
-        </div>
+            </div>
     </footer>
 </body>
+
+<div class="fot-social">
+    <a href=""><i class="fab fa-instagram"></i></a>
+    <a href=""><i class="fab fa-linkedin"></i></a>
+    <a href=""><i class="fab fa-twitter"></i></a>
+    <a href=""><i class="fab fa-facebook"></i></a>
+    <a href=""><i class="fab fa-spotify"></i></a>
+    <a href=""><i class="fab fa-tumblr"></i></a>
+</div>
 </html>

@@ -43,19 +43,19 @@ text-align: right;
 margin-right: 30%;
 }
 header{
-
     box-sizing: border-box;
-    background-color: #014f80;
-    height: 47vh;
+    background-color: #ffffff;
+    height: 77vh;
     width: 100%;
-    z-index: -100;
+    z-index: -15;
     /* background-image: url(../images/main/Cover\ big\ web\ 50.jpg); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.775) 0%, rgba(0, 0, 0, 0) 50%),  url(/images/main/Cover\ big\ web\ 50.jpg);
+    background-image: url(/images/bg/ignitecoverblackstriphighres.jpg);
     background-repeat: no-repeat;
-    background-size: none;
-    background-position: bottom center;
+    background-size: cover;
+    background-position: left bottom;
     background-attachment: fixed;
     object-fit: contain;
+    
     }
 .blogcontainer {
     background-color: white;
@@ -63,7 +63,7 @@ header{
     padding: 10px;
     margin-left: 20%;
 }
-.imgcontainer{
+.imgcontainer img{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.489);
 }
 .asopacity {
@@ -71,4 +71,19 @@ header{
 }
 @media only screen and (max-width: 600px) {
     #side{margin-right: 5px;}
+    header{
+        background-image: url(/images/bg/ignitecoverblackstrip.jpg);
+    }
+}
+hr{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+section{
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
