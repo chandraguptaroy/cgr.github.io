@@ -1,3 +1,6 @@
+Website logo :   <link rel="shortcut icon" type="image/png" href="/images/main/chandu.png">
+
+
 Hr tag:
 
 <hr color=black width="10%" size=".5px" />
