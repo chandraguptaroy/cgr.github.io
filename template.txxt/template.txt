@@ -35,3 +35,7 @@ Font Asesome: <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 e query: <script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.9.2/EQCSS.min.js" integrity="sha512-yfw7F0e6Vqdxeg6nDlK4l4+pyBvwozVA61StkFRHcwW2dTAIRa4rfmvi4xXmcRmcnq4NI3jbOY4B8cc25n5SkA=="  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src=EQCSS.js></script>
 
+
+Short hand: 
+font: style variant weight size/line-height family;
+font: normal normal normal 18px/1.5 'Montserrat', sans-serif;

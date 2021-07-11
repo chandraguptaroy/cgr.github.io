@@ -11,6 +11,8 @@ HTML:
     </div>
   </section>
 
+<script src="/templates/socialbar.js"></script>   <!--        Social Bar         -->
+
 
   css: <link rel="stylesheet" href="css/socialibar.css">
 
