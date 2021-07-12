@@ -15,10 +15,10 @@ Main:
 
 
 <link rel="shortcut icon" type="image/png" href="/images/main/chandu.png">  <!--Website small logo-->
-<link rel="stylesheet" href="css/cgrnav.css">    <!--        Navbar         -->
-<link rel="stylesheet" href="css/totopbutton.css"> <!--        ToTop         -->
-<link rel="stylesheet" href="css/socialibar.css">   <!--        Social Bar         -->
-<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="/css/cgrnav.css">    <!--        Navbar         -->
+<link rel="stylesheet" href="/css/totopbutton.css"> <!--        ToTop         -->
+<link rel="stylesheet" href="/css/socialibar.css">   <!--        Social Bar         -->
+<link rel="stylesheet" href="/css/all.css">
 
 <!--   Font Awesome > Icons  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
