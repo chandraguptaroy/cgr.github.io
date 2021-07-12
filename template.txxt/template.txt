@@ -1,6 +1,3 @@
-Website logo :   <link rel="shortcut icon" type="image/png" href="/images/main/chandu.png">
-
-
 Hr tag:
 
 <hr color=black width="10%" size=".5px" />
@@ -19,18 +16,14 @@ title="Click for the larger version." />
 
 Header Background with Linear gradient above: linear-gradient(rgba(0, 0, 0, 0.775) 0%, rgba(0, 0, 0, 0) 50%),  url(../images/main/Cover\ big\ web\ 50.jpg);
 
-Buttons with hover hr effect: *link all.css for this to work  <link rel="stylesheet" href="../css/all.css">
-                <!--Button-->
-                <div class="btn">
-                    <a href="xxxxxxxxxxxxxx"><b>Download </b><br><br><hr class="transhr" color=black width="70%" size=".5px"/></a>
-                </div>
-                <!--Button-->
-
-
 
 Javascripts:
 
-Font Asesome: <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+Font Asesome: 
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
 e query: <script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.9.2/EQCSS.min.js" integrity="sha512-yfw7F0e6Vqdxeg6nDlK4l4+pyBvwozVA61StkFRHcwW2dTAIRa4rfmvi4xXmcRmcnq4NI3jbOY4B8cc25n5SkA=="  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src=EQCSS.js></script>
