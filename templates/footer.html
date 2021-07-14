@@ -23,6 +23,35 @@
            background-attachment: fixed;
            padding-bottom: 2%;
        }
+       /*            Footer Navigation     Start       */
+       @media (min-width:540px){
+           .fot-nav2{
+               display: none;
+           }
+       }
+       .fot-nav2 ul{
+            padding-top: 10px;
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            padding-inline-start: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+       }
+       .fot-nav2 ul li{
+            margin: 0 0;
+        }
+        .fot-nav2 ul li a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Anton', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1.2px;
+            background-color: #2d2d2dac;
+            border-radius: 10px;
+            padding: 5px;
+        }
+       /*            Footer Navigation     End         */
        .fot-wrapper{
             padding: 20px;
             width: 95%;
@@ -185,10 +214,26 @@
             }
         }
          /*                 Support      End    */
+         /*                 Fonts      Start    */
+         .fot-details h2{
+            font: normal small-caps bold 200%/1 'Montserrat', sans-serif;
+         }
+         .fot-details p{
+            font: normal small-caps lighter 120%/1 'Montserrat', sans-serif;
+         }
+         /*                 Fonts      End    */
     </style>
 </head>
 <body>
     <footer>
+        <div class="fot-nav2">
+            <ul>
+                <li><a class="" href="/">Home</a></li>
+                <li><a class="" href="/blog/">Blog</a></li>
+                <li><a class="" href="/main/work.html">Work</a></li>
+                <li><a class="" href="/main/about.html">About</a></li>
+            </ul>
+        </div>
         <div class="fot-wrapper">
             <section class="fot-cols">
 
@@ -200,7 +245,7 @@
                             </div>
                             <div class="fot-details">
                                 <h2>Eduv</h2>
-                                <p><i>Educational Videos with Industry Level Editing</i></p>
+                                <p><i>Educational Videos | Industry Level Editing</i></p>
                             </div>
                             <div class="fot-social">
                                 <a href=""><i class="fab fa-youtube"></i></a>
