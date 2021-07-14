@@ -1,4 +1,718 @@
 <!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Our Team Section | CodingLab </title>---->
+    <link rel="stylesheet" href="/css/cgrnav.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <!--  Font   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!--  Font   -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <style>
+     /*              MAIN            01       Start*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  position: absolute;
+  width: 100%;
+
+}
+.template{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+ .template::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  background: #FF676D;
+  clip-path: inset(47% 0 0 0);
+  z-index: -1;
+  height: 100%;
+} 
+::selection{
+  background:	#FF676D;
+  color: #fff;
+}
+.container{
+  max-width: 1200px;
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+}
+.container .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+.container .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #FF676D;
+  margin-bottom: 14px;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .content .job{
+  font-size: 20px;
+  color: #FF676D;
+}
+.card .content .media-icons{
+  margin-top: 10px;
+  display: flex;
+
+}
+.media-icons a{
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #FF676D;
+  transition: all 0.3s ease;
+}
+.media-icons a:hover{
+  color: #FF676D;
+  background-color: #fff;
+  border-color: #FF676D;
+}
+ .container .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button label.active{
+  width: 35px;
+}
+#one:checked ~ .button .one{
+  width: 35px;
+}
+#one:checked ~ .button .two{
+  width: 15px;
+}
+#two:checked ~ .button .one{
+  width: 15px;
+}
+#two:checked ~ .button .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
+
+/*              MAIN            01       End*/
+
+/*                        02       Start*/
+#two-two:checked ~ .main-card{
+  margin-left: -100%;}
+.container .two-button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.two-button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.two-button label.active{
+  width: 35px;
+}
+#two-one:checked ~ .two-button .two-one{
+  width: 35px;
+}
+#two-one:checked ~ .two-button .two-two{
+  width: 15px;
+}
+#two-two:checked ~ .two-button .two-one{
+  width: 15px;
+}
+#two-two:checked ~ .two-button .two-two{
+  width: 35px;
+}
+/*                        02       End*/
+
+
+/*                        03       Start*/
+#three-two:checked ~ .main-card{
+  margin-left: -100%;}
+.container .three-button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.three-button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.three-button label.active{
+  width: 35px;
+}
+#three-one:checked ~ .three-button .three-one{
+  width: 35px;
+}
+#three-one:checked ~ .three-button .three-two{
+  width: 15px;
+}
+#three-two:checked ~ .three-button .three-one{
+  width: 15px;
+}
+#three-two:checked ~ .three-button .three-two{
+  width: 35px;
+}
+/*                        03       End*/
+
+.work-titles{
+  text-align: center;
+  margin-top: 30px;
+  font: normal normal bold 250%/1.5 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+}
+header{
+  height: 20vh;
+  background-color: black;
+}
+label{display: block;}
+hr{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+   </style>
+<body>
+<script src="/templates/cgrnav.js"></script>
+<h1 class="work-titles">My Photoshops:</h1>
+<hr color=black width="8%" size=".5px" />
+<div class="template">
+  <div class="container">
+    <input type="radio" name="dot" id="one">
+    <input type="radio" name="dot" id="two">
+    
+    <!--                        Full Card Set          End                -->
+    <div class="main-card">
+
+        <!--                        First Card Set          Start                -->
+      <div class="cards">
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <!--- <img src="images/img1.jpg" alt="">-->
+           </div>
+           <div class="details">
+             <div class="name">Andrew Neil</div>
+             <div class="job">Web Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <!--- <img src="images/img2.jpg" alt="">--->
+           </div>
+           <div class="details">
+             <div class="name">Jasmine Carter</div>
+             <div class="job">UI Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <!-- <img src="images/img3.jpg" alt="">---->
+           </div>
+           <div class="details">
+             <div class="name">Justin Chung</div>
+             <div class="job">Web Devloper</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+      </div>
+        <!--                        First Card Set          End                -->
+        
+        
+        <!--                        Second Card Set          Start                -->
+
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <!---<img src="images/img4.jpg" alt="">--->
+           </div>
+           <div class="details">
+             <div class="name">Appolo Reef</div>
+             <div class="job">Web Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+        
+        
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <!--<img src="images/img5.jpg" alt="">---->
+           </div>
+           <div class="details">
+             <div class="name">Adrina Calvo</div>
+             <div class="job">UI Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <!--<img src="images/img6.jpeg" alt="">--->
+           </div>
+           <div class="details">
+             <div class="name">Nicole Lewis</div>
+             <div class="job">Web Devloper</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+      </div>
+
+    <!--                        Second Card Set          End                -->
+    </div>
+    <!--                        Full Card Set          End                -->
+    <div class="button">
+      <label for="one" class=" active one"></label>
+      <label for="two" class="two"></label>
+    </div>
+  </div>
+</div>
+
+<h1 class="work-titles">My Illustrations:</h1>
+<hr color=black width="8%" size=".5px" />
+<!--                     2nd                    Start  -->
+<div class="template">
+  <div class="container">
+    <input type="radio" name="dot" id="two-one">
+    <input type="radio" name="dot" id="two-two">
+    
+    <!--                        Full Card Set          End                -->
+    <div class="main-card">
+
+        <!--                        First Card Set          Start                -->
+      <div class="cards">
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <!--- <img src="images/img1.jpg" alt="">-->
+           </div>
+           <div class="details">
+             <div class="name">Andrew Neil</div>
+             <div class="job">Web Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <!--- <img src="images/img2.jpg" alt="">--->
+           </div>
+           <div class="details">
+             <div class="name">Jasmine Carter</div>
+             <div class="job">UI Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <!-- <img src="images/img3.jpg" alt="">---->
+           </div>
+           <div class="details">
+             <div class="name">Justin Chung</div>
+             <div class="job">Web Devloper</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+      </div>
+        <!--                        First Card Set          End                -->
+        
+        
+        <!--                        Second Card Set          Start                -->
+
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <!---<img src="images/img4.jpg" alt="">--->
+           </div>
+           <div class="details">
+             <div class="name">Appolo Reef</div>
+             <div class="job">Web Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+        
+        
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <!--<img src="images/img5.jpg" alt="">---->
+           </div>
+           <div class="details">
+             <div class="name">Adrina Calvo</div>
+             <div class="job">UI Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <!--<img src="images/img6.jpeg" alt="">--->
+           </div>
+           <div class="details">
+             <div class="name">Nicole Lewis</div>
+             <div class="job">Web Devloper</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+      </div>
+
+    <!--                        Second Card Set          End                -->
+    </div>
+    <!--                        Full Card Set          End                -->
+    <div class="two-button">
+      <label for="two-one" class=" active two-one"></label>
+      <label for="two-two" class="two-two"></label>
+    </div>
+  </div>
+</div>
+<!--                    2nd                     End    -->
+<!--                    3rd                     Start    -->
+<div class="template">
+  <div class="container">
+    <input type="radio" name="dot" id="three-one">
+    <input type="radio" name="dot" id="three-two">
+    
+    <!--                        Full Card Set          End                -->
+    <div class="main-card">
+
+        <!--                        First Card Set          Start                -->
+      <div class="cards">
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <!--- <img src="images/img1.jpg" alt="">-->
+           </div>
+           <div class="details">
+             <div class="name">Andrew Neil</div>
+             <div class="job">Web Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <!--- <img src="images/img2.jpg" alt="">--->
+           </div>
+           <div class="details">
+             <div class="name">Jasmine Carter</div>
+             <div class="job">UI Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <!-- <img src="images/img3.jpg" alt="">---->
+           </div>
+           <div class="details">
+             <div class="name">Justin Chung</div>
+             <div class="job">Web Devloper</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+      </div>
+        <!--                        First Card Set          End                -->
+        
+        
+        <!--                        Second Card Set          Start                -->
+
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <!---<img src="images/img4.jpg" alt="">--->
+           </div>
+           <div class="details">
+             <div class="name">Appolo Reef</div>
+             <div class="job">Web Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+        
+        
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <!--<img src="images/img5.jpg" alt="">---->
+           </div>
+           <div class="details">
+             <div class="name">Adrina Calvo</div>
+             <div class="job">UI Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <!--<img src="images/img6.jpeg" alt="">--->
+           </div>
+           <div class="details">
+             <div class="name">Nicole Lewis</div>
+             <div class="job">Web Devloper</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+      </div>
+
+    <!--                        Second Card Set          End                -->
+    </div>
+    <!--                        Full Card Set          End                -->
+    <div class="three-button">
+      <label for="three-one" class=" active three-one"></label>
+      <label for="three-two" class="three-two"></label>
+    </div>
+  </div>
+</div>
+<!--                    3rd                     End    -->
+
+</body>
+</html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -29,9 +743,9 @@
   <main>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <!--Best latest works with slide function, then at last option to show all, right triangle type 
+    Best latest works with slide function, then at last option to show all, right triangle type 
     And all stuffs show cases packed inside something like inside a photoframe(something like that ie. with a uniform (white, transparent, beautiful) boundary) -->   
-    <section class="Photoshop">
+    <!-- <section class="Photoshop">
         <div class="landscape">
 
         </div>
@@ -70,8 +784,8 @@
       </p>
     </section>
     <h1>Just for try.....</h1>
-    <iframe style="text-align: center;"src="https://discordapp.com/widget?id=856813435537588234&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-  </main>
+    <iframe style="text-align: center;"src="https://discordapp.com/widget?id=856813435537588234&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
+  <!-- </main>
     <script>//Get the button:
       mybutton = document.getElementById("myBtn");
       
@@ -92,4 +806,4 @@
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
       }</script>
 </body>
-</html>
+</html> --> 

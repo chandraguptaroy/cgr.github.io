@@ -10,20 +10,26 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
    <style>
+     /*              MAIN            01       Start*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body{
+  position: absolute;
+  width: 100%;
+  background-color: #FF676D;
+  background-image: url(/images/bg/striped\ black\ bg.jpg);
+}
+.template{
   display: flex;
-  min-height: 100vh;
+  min-height: 10vh;
   align-items: center;
   justify-content: center;
-  background: #f2f2f2;
   position: relative;
 }
-body::before{
+/* .template::before{
   content: '';
   position: absolute;
   width: 100%;
@@ -31,7 +37,7 @@ body::before{
   clip-path: inset(47% 0 0 0);
   z-index: -1;
   height: 100%;
-}
+} */
 ::selection{
   background:	#FF676D;
   color: #fff;
@@ -169,8 +175,45 @@ input[type="radio"]{
   }
 }
 
+/*              MAIN            01       End*/
+
+/*                        02       Start*/
+.container .two-button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.two-button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.two-button label.active{
+  width: 35px;
+}
+#two-one:checked ~ .two-button .two-one{
+  width: 35px;
+}
+#two-one:checked ~ .two-button .two-two{
+  width: 15px;
+}
+#two-two:checked ~ .two-button .two-one{
+  width: 15px;
+}
+#two-two:checked ~ .two-button .two-two{
+  width: 35px;
+}
+/*                        02       End*/
+
    </style>
 <body>
+<div class="template">
   <div class="container">
     <input type="radio" name="dot" id="one">
     <input type="radio" name="dot" id="two">
@@ -311,5 +354,151 @@ input[type="radio"]{
       <label for="two" class="two"></label>
     </div>
   </div>
+</div>
+
+
+<!--                 02                     -->
+<div class="template">
+  <div class="container">
+    <input type="radio" name="dot" id="two-one">
+    <input type="radio" name="dot" id="two-two">
+    
+    <!--                        Full Card Set          End                -->
+    <div class="main-card">
+
+        <!--                        First Card Set          Start                -->
+      <div class="cards">
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <!--- <img src="images/img1.jpg" alt="">-->
+           </div>
+           <div class="details">
+             <div class="name">Andrew Neil</div>
+             <div class="job">Web Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <!--- <img src="images/img2.jpg" alt="">--->
+           </div>
+           <div class="details">
+             <div class="name">Jasmine Carter</div>
+             <div class="job">UI Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <!-- <img src="images/img3.jpg" alt="">---->
+           </div>
+           <div class="details">
+             <div class="name">Justin Chung</div>
+             <div class="job">Web Devloper</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+      </div>
+        <!--                        First Card Set          End                -->
+        
+        
+        <!--                        Second Card Set          Start                -->
+
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <!---<img src="images/img4.jpg" alt="">--->
+           </div>
+           <div class="details">
+             <div class="name">Appolo Reef</div>
+             <div class="job">Web Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+        
+        
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <!--<img src="images/img5.jpg" alt="">---->
+           </div>
+           <div class="details">
+             <div class="name">Adrina Calvo</div>
+             <div class="job">UI Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <!--<img src="images/img6.jpeg" alt="">--->
+           </div>
+           <div class="details">
+             <div class="name">Nicole Lewis</div>
+             <div class="job">Web Devloper</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+
+
+      </div>
+
+    <!--                        Second Card Set          End                -->
+    </div>
+    <!--                        Full Card Set          End                -->
+    <div class="two-button">
+      <label for="two-one" class=" active two-one"></label>
+      <label for="two-two" class="tow-two"></label>
+    </div>
+  </div>
+</div>
 </body>
 </html>

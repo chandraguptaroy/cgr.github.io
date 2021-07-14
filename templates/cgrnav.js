@@ -1,6 +1,6 @@
 document.write('<header>\
 <nav>\
-    <div class="logo"><a href="/index.html"><img src="/images/main/cgrwhite.png" alt=""></a></div>\
+    <div class="logo"><a href="/"><img src="/images/main/cgrwhite.png" alt=""></a></div>\
     <input type="checkbox" id="click">\
     <label for="click" class="menubtn">\
         <i class="fas fa-bars"></i>\
