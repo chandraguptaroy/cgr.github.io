@@ -38,7 +38,7 @@ body{
   content: '';
   position: absolute;
   width: 100%;
-  background: #FF676D;
+  background: #67ccff;
   clip-path: inset(47% 0 0 0);
   z-index: -1;
   height: 100%;
@@ -73,7 +73,7 @@ body{
   width: calc(100% / 3 - 10px);
   background: #fff;
   border-radius: 12px;
-  padding: 30px;
+  padding: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.4s ease;
 }
@@ -89,30 +89,23 @@ body{
   text-align: center;
 }
 .cards .card .content .img{
-  height: 130px;
-  width: 130px;
-  border-radius: 50%;
-  padding: 3px;
-  background: #FF676D;
-  margin-bottom: 14px;
+  padding: 2px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
 }
 .card .content .img img{
   height: 100%;
   width: 100%;
   border: 3px solid #ffff;
-  border-radius: 50%;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.408);
   object-fit: cover;
 }
 .card .content .name{
   font-size: 20px;
   font-weight: 500;
 }
-.card .content .job{
-  font-size: 20px;
-  color: #FF676D;
-}
 .card .content .media-icons{
-  margin-top: 10px;
+  margin-top: 5px;
   display: flex;
 
 }
@@ -126,13 +119,13 @@ body{
   color: #FFF;
   border-radius: 50%;
   border: 2px solid transparent;
-  background: #FF676D;
+  background: #67ccff;
   transition: all 0.3s ease;
 }
 .media-icons a:hover{
-  color: #FF676D;
+  color: #67ccff;
   background-color: #fff;
-  border-color: #FF676D;
+  border-color: #67ccff;
 }
  .container .button{
   width: 100%;
@@ -274,6 +267,8 @@ hr{
    </style>
 <body>
 <script src="/templates/cgrnav.js"></script>
+
+<!--            1:    My.......             Start    -->
 <h1 class="work-titles">My Photoshops:</h1>
 <hr color=black width="8%" size=".5px" />
 <div class="template">
@@ -281,7 +276,7 @@ hr{
     <input type="radio" name="dot" id="one">
     <input type="radio" name="dot" id="two">
     
-    <!--                        Full Card Set          End                -->
+    <!--                        Full Card Set          Start                -->
     <div class="main-card">
 
         <!--                        First Card Set          Start                -->
@@ -291,17 +286,13 @@ hr{
         <div class="card">
          <div class="content">
            <div class="img">
-            <!--- <img src="images/img1.jpg" alt="">-->
+              <img src="/images/work/photoshop/thumbnails/eduv_bigsmall.jpg">
            </div>
            <div class="details">
-             <div class="name">Andrew Neil</div>
-             <div class="job">Web Designer</div>
+             <div class="name">Programming Video</div>
            </div>
            <div class="media-icons">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-youtube"></i></a>
+             <a href="#"><i class="fas fa-external-link-alt"></i></a>
            </div>
          </div>
         </div>
@@ -310,39 +301,32 @@ hr{
         <div class="card">
          <div class="content">
            <div class="img">
-            <!--- <img src="images/img2.jpg" alt="">--->
+            <img src="/images/work/photoshop/thumbnails/Eduv_Industrial.jpg" alt="">
            </div>
            <div class="details">
-             <div class="name">Jasmine Carter</div>
-             <div class="job">UI Designer</div>
+             <div class="name">Why it: Blue Light</div>
            </div>
            <div class="media-icons">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-youtube"></i></a>
+             <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
            </div>
          </div>
         </div>
 
 
         <div class="card">
-         <div class="content">
-           <div class="img">
-            <!-- <img src="images/img3.jpg" alt="">---->
-           </div>
-           <div class="details">
-             <div class="name">Justin Chung</div>
-             <div class="job">Web Devloper</div>
-           </div>
-           <div class="media-icons">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-youtube"></i></a>
-           </div>
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/thumbnails/Eduv_Industrial.jpg" alt="">
+            </div>
+            <div class="details">
+              <div class="name">Project Notes</div>
+            </div>
+            <div class="media-icons">
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
          </div>
-        </div>
       </div>
         <!--                        First Card Set          End                -->
         
@@ -351,60 +335,48 @@ hr{
 
       <div class="cards">
         <div class="card">
-         <div class="content">
-           <div class="img">
-             <!---<img src="images/img4.jpg" alt="">--->
-           </div>
-           <div class="details">
-             <div class="name">Appolo Reef</div>
-             <div class="job">Web Designer</div>
-           </div>
-           <div class="media-icons">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-youtube"></i></a>
-           </div>
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/thumbnails/Eduv_Industrial.jpg" alt="">
+            </div>
+            <div class="details">
+              <div class="name">Project Notes</div>
+            </div>
+            <div class="media-icons">
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
          </div>
-        </div>
         
         
-        <div class="card">
-         <div class="content">
-           <div class="img">
-             <!--<img src="images/img5.jpg" alt="">---->
-           </div>
-           <div class="details">
-             <div class="name">Adrina Calvo</div>
-             <div class="job">UI Designer</div>
-           </div>
-           <div class="media-icons">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-youtube"></i></a>
-           </div>
+         <div class="card">
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/thumbnails/Eduv_Industrial.jpg" alt="">
+            </div>
+            <div class="details">
+              <div class="name">Project Notes</div>
+            </div>
+            <div class="media-icons">
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
          </div>
-        </div>
 
 
-        <div class="card">
-         <div class="content">
-           <div class="img">
-             <!--<img src="images/img6.jpeg" alt="">--->
-           </div>
-           <div class="details">
-             <div class="name">Nicole Lewis</div>
-             <div class="job">Web Devloper</div>
-           </div>
-           <div class="media-icons">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-youtube"></i></a>
-           </div>
+         <div class="card">
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/thumbnails/Eduv_Industrial.jpg" alt="">
+            </div>
+            <div class="details">
+              <div class="name">Project Notes</div>
+            </div>
+            <div class="media-icons">
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
          </div>
-        </div>
 
 
       </div>
@@ -418,6 +390,7 @@ hr{
     </div>
   </div>
 </div>
+<!--            1:    My.......             End    -->
 
 <h1 class="work-titles">My Illustrations:</h1>
 <hr color=black width="8%" size=".5px" />

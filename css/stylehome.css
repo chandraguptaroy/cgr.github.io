@@ -42,6 +42,12 @@ header{
   background-attachment: fixed;
   object-fit: contain;
 }
+@media only screen and (max-width:640px) {
+  header{
+    background-attachment: initial;
+  }
+}
+
 /*                  Header       End    */
 main {
     background-color: white;
@@ -114,6 +120,7 @@ hr{display: block;
 /*            YouTube      Start      */ 
 .Youtube {
   text-align: left;
+  z-index: 3;
 }
 .Youtube h1{
   font-family: 'Anton', sans-serif;
