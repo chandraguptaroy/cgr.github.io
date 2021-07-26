@@ -73,7 +73,7 @@
       padding-bottom: 5px;
     }
     .blogcontainer-1 {
-      width: 80%;
+      width: 90%;
     }
     .latest{
       width: 80%;
@@ -110,8 +110,13 @@
       height: 144px;
       transform: scale();
     }
-    .container{ position: relative;
+    .container{ 
+      width: 256px;
+      height: 144px;
+      position: relative;
       margin-bottom: 5%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .title{
       position: absolute;
@@ -121,6 +126,9 @@
       transform: translate(-50%, -50%);
       color: white;
       font-size: large;
+      font-style: italic;
+      font-weight: bolder;
+      text-shadow:  2px 0 10px black;
     }
     @media screen and (max-width:640px) {
       .blogcats{
@@ -128,6 +136,18 @@
         margin-right: auto;
         margin-left: auto;
       }
+    }
+    .cate-health{
+      background-image: url(img/main/healthbg.jpg);
+      background-size: cover;
+    }
+    .cate-edu{
+      background-image: url(img/index/blog1.jpg);
+      background-size: cover;
+    }
+    .cate-logs{
+      background-image: url(img/index/blog2.jpg);
+      background-size: cover;
     }
     /*                        Blog  Catrogries         End          */
     /*           Last section Author and Popular     Start       */
@@ -222,26 +242,26 @@
 
 <!--               Blog Topic/Sections                   -->
 <section class="blogcats">
+  <a href="main/tech.html">
+  <div class="container cate-health">
+    <div class="title">HEALTH</div>
+  </div>
+</a>
   <div class="container">
     <a href="main/tech.html">
       <img class="blogimg" src="img/main/techbg.jpg"></a>
-    <div class="title"><i><b>TECH</b></i></div>
+    <div class="title">TECH</div>
   </div>
-  <div class="container">
-    <a href="main/tech.html">
-      <img class="blogimg" src="img/main/techbg.jpg"></a>
-    <div class="title"><i><b>TECH</b></i></div>
-  </div>
-  <div class="container">
-    <a href="main/tech.html">
-      <img class="blogimg" src="img/main/techbg.jpg"></a>
-    <div class="title"><i><b>TECH</b></i></div>
-  </div>
-  <div class="container">
-    <a href="main/tech.html">
-      <img class="blogimg" src="img/main/techbg.jpg"></a>
-    <div class="title"><i><b>TECH</b></i></div>
-  </div>
+  <a href="main/tech.html">
+    <div class="container cate-edu">
+      <div class="title">EDUCATION</div>
+    </div>
+  </a>
+  <a href="main/tech.html">
+    <div class="container cate-logs">
+      <div class="title">LOGS</div>
+    </div>
+  </a>
 </section>
 <!--               Blog Topic/Sections         End          -->
 
@@ -299,7 +319,7 @@
             <img id="popularblogpic" src="./img/index/blog1.jpg">
             <h3>Education</h3>
             <div class="btn" id="popularbtn">
-              <a href="xxxxxxxxxxxxxx"><b>Read</b><hr class="transhr" color=black width="70%" size=".5px"/></a>
+              <a href="/blog/education/Education_change.html"><b>Read</b><hr class="transhr" color=black width="70%" size=".5px"/></a>
             </div>
           </div>
           <hr>
@@ -307,7 +327,7 @@
             <img id="popularblogpic" src="./img/index/blog2.jpg">
             <h3>Chitkohra</h3>
             <div class="btn" id="popularbtn">
-              <a href="xxxxxxxxxxxxxx"><b>Read </b><hr class="transhr" color=black width="70%" size=".5px"/></a>
+              <a href="/blog/logs/chitkohra_chawal_bazaar.html"><b>Read </b><hr class="transhr" color=black width="70%" size=".5px"/></a>
             </div>
           </div>
         </div>  
