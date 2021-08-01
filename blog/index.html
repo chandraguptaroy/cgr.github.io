@@ -28,9 +28,15 @@
       text-align: center;
       color: black;
     }
+    .blog-title{
+      font-weight: bolder;
+      font-size: larger;
+    }
+    .blog-title2{
+      font-variant: small-caps;
+    }
     * {
       box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
     }
     header{
       height: 40vh;
@@ -40,7 +46,7 @@
       text-align: center;
       font-size: xx-large;
     }
-    #title{
+    #blog-title{
       padding-left: 10%;
       padding-right: 10%;
       padding-top: 5%;
@@ -118,7 +124,7 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    .title{
+    .blog-cate-title{
       position: absolute;
       text-align: center;
       top: 50%;
@@ -136,9 +142,21 @@
         margin-right: auto;
         margin-left: auto;
       }
-    }
+      [class*="cate-"] {
+        margin: 0%;
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+        margin-bottom: 10px;
+      }
+      }
+    
     .cate-health{
       background-image: url(img/main/healthbg.jpg);
+      background-size: cover;
+    }
+    .cate-tech{
+      background-image: url(img/main/techbg.jpg);
       background-size: cover;
     }
     .cate-edu{
@@ -168,6 +186,11 @@
       border-radius: 50%;
       width: 40%;
       height: auto;
+    }
+    .blog-author-title{
+      font-weight: bold;
+      font-variant: small-caps;
+      font-size: large;
     }
     #popularblogpic{
       height: 120px;
@@ -208,21 +231,21 @@
 <body>
   <script src="..\templates/cgrnav.js"></script>
   <div class="header">
-    <h1>My Blog</h1>
-    <hr color=black width="10%" size=".5px" />
+    <h1 class="blog-title">My Blog</h1>
+    <hr color=black width="80px" size=".5px" />
   </div>
 
 
   <!--            Latest Blog         start     -->
-  <h1 id="title">Latest Blog:</h1>
+  <h1 id="blog-title">Latest Blog:</h1>
   <div class="row">
     <div class="col-12 col-s-12 ">
       <div class="blogcontainer-1">
         <div class="latest">
           <img class="blogimg"src="img/index/blog1.jpg" alt="" width="100%">
-          <div>
-            <h1><b>EDUCATION</b></h1>
-            <h3>The Change it needs, <span class="asopacity">july 2, 2021</span></h3>
+          <div><br>
+            <h1 class="blog-title2">EDUCATION</h1><br>
+            <h3 class="blog-title2" >The Change It Needs, <span class="asopacity">July 2, 2021</span></h3>     <br>
           </div>
           <div>
             <p style="font-size: large;">Education is basically a way to pass on information from the previous generation
@@ -244,22 +267,22 @@
 <section class="blogcats">
   <a href="main/tech.html">
   <div class="container cate-health">
-    <div class="title">HEALTH</div>
+    <div class="blog-cate-title">HEALTH</div>
   </div>
 </a>
-  <div class="container">
-    <a href="main/tech.html">
-      <img class="blogimg" src="img/main/techbg.jpg"></a>
-    <div class="title">TECH</div>
+<a href="main/tech.html">
+  <div class="container cate-tech">
+    <div class="blog-cate-title">TECH</div>
   </div>
+</a>
   <a href="main/tech.html">
     <div class="container cate-edu">
-      <div class="title">EDUCATION</div>
+      <div class="blog-cate-title">EDUCATION</div>
     </div>
   </a>
   <a href="main/tech.html">
     <div class="container cate-logs">
-      <div class="title">LOGS</div>
+      <div class="blog-cate-title">LOGS</div>
     </div>
   </a>
 </section>
@@ -298,11 +321,11 @@
     <div class="col-6 col-s-12">
       <div class="blogcontainer-2">
         <div class="author">
-          <img class="blogimg" src="./img/index/profile.jpg" alt="" width="100%">
+          <img class="blogimg" src="./img/index/profile.jpg" alt="" width="100%">          <br>
           <div>
-            <h4><b>Chandra Gupta Roy</b></h4>
+            <h1 class="blog-author-title">Chandra Gupta Roy</h1>                                                <br>
             <p style="font-size: large" ;>On our path we need mentors.<br>Who Guide us and to whom we could check in when we
-              seem lost.<br>And with the Internet we could make anyone our mentor. Listen to their videos, read their blogs and learn. </p>
+              seem lost.<br>And with the Internet we could make anyone our mentor. Listen to their videos, read their blogs and learn. </p>        <br>
           </div>
         </div>
       </div>
