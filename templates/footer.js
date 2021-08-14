@@ -13,7 +13,7 @@ document.write('<footer>\
             <div class="fot-col-top">\
                 <div class="fot-content">\
                     <div class="fot-img">\
-                        <img style="width: 25%;border-radius: 50%;" src="../images/main/eduv.jpg">\
+                        <img style="width: 25%;border-radius: 50%;" src="../images/main/eduv_logo.webp">\
                     </div>\
                     <div class="fot-details">\
                         <h2>Eduv</h2>\
@@ -35,7 +35,7 @@ document.write('<footer>\
             <div class="fot-col-top">\
                 <div class="fot-content">\
                     <div class="fot-img">\
-                        <img style="width: 25%;border-radius: 50%;" src="../images/main/chandu.png">\
+                        <img style="width: 25%;border-radius: 50%;" src="../images/main/chandu.webp">\
                     </div>\
                     <div class="fot-details">\
                         <h2>CGR</h2>\
@@ -49,7 +49,7 @@ document.write('<footer>\
                         <a href="https://facebook.com/thechandraguptaroy"><i class="fab fa-facebook-f"></i></a>\
                         <a href="https://open.spotify.com/show/6diy7vjC9MSN3et1LLWVB0"><i class="fab fa-spotify"></i></a>\
                         <a href="https://chandraguptaroy.tumblr.com/"><i class="fab fa-tumblr"></i></a>\
-                       <!-- <a href=""><i><img class="fot-duolingo" src="/images/icons/duolingo.png"></i></a>-->\
+                       <!-- <a href=""><i><img class="fot-duolingo" src="/images/icons/duolingo.webp"></i></a>-->\
                         <a href=""class="fot-duo iconify duolingo" data-icon="simple-icons:duolingo"></a>\
                     </div>\
                 </div>\
@@ -59,7 +59,7 @@ document.write('<footer>\
             <div class="fot-col-top">\
                 <div class="fot-content">\
                     <div class="fot-img">\
-                        <img style="width: 25%;border-radius: 50%;" src="/images/main/why it.jpg">\
+                        <img style="width: 25%;border-radius: 50%;" src="/images/main/whyit_logo.webp">\
                     </div>\
                     <div class="fot-details">\
                         <h2>Why it</h2>\
@@ -86,9 +86,9 @@ document.write('<footer>\
     <div class="fot-support">\
         <h3 style="color: rgb(0, 0, 0);">Support:</h3>\
         <div class="fot-support-icon">\
-                <a href=""><img class="icon" src="/images/payments icons/gpay.png"></a>\
-                <a href=""><img class="icon paypal"  src="/images/payments icons/paypal-logo.png"></a>\
-                <a href=""><img  class="icon " src="/images/payments icons/paytm-226448.png"></a>\
+                <a href=""><img class="icon" src="/images/payments icons/gpay.webp"></a>\
+                <a href=""><img class="icon paypal"  src="/images/payments icons/paypal-logo.webp"></a>\
+                <a href=""><img  class="icon " src="/images/payments icons/paytm.webp"></a>\
         </div>\
     </div>\
 </footer>\

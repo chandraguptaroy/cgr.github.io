@@ -33,7 +33,7 @@ nav ul li a{
 }
 nav ul li a:hover{
     color: black;
-    background-color: rgba(113, 233, 251, 0.898);
+    background-color: rgba(113, 233, 251, 0.551);
     transition: all .3s ease;
 }
 #click{

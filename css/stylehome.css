@@ -35,7 +35,7 @@ header{
   height: 89vh;
   width: 100%;
   /* background-image: url(../images/main/Cover\ big\ web\ 50.jpg); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.775) 0%, rgba(0, 0, 0, 0) 50%),  url(../images/main/Cover\ big\ web\ 50.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.775) 0%, rgba(0, 0, 0, 0) 50%),  url(../images/main/Cover_big.webp);
   background-repeat: no-repeat;
   background-size: none;
   background-position: bottom center;
@@ -78,7 +78,7 @@ section h5 {
   font: italic small-caps bolder 50px/1.5 'Montserrat', sans-serif;
   }
 .Quote{
-  background-image:url(../images/bg/yellow_grunge02.jpg);
+  background-image:url(../images/bg/yellow_grunge02.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
