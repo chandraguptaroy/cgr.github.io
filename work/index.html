@@ -1043,122 +1043,46 @@ img.hover-shadow {
 </div>
 
 <script>
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
 </script>
 
 <!--    Modular       JS Open Image Gallery           End-->
 
-</body>
-</html>
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/png" href="/images/main/chandu.png">
-  <title>Work</title>
-  <style>#myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: rgb(198, 253, 255); /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
-  
-  #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }</style>
-</head>
-<body>
-  <main>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-    Best latest works with slide function, then at last option to show all, right triangle type 
-    And all stuffs show cases packed inside something like inside a photoframe(something like that ie. with a uniform (white, transparent, beautiful) boundary) -->   
-    <!-- <section class="Photoshop">
-        <div class="landscape">
-
-        </div>
-        <div class="portraits">
-
-        </div>
-    </section>
-    <section class="Illustrator">
-
-    </section>
-    <section class="Animation">
-
-    </section>
-    <section class="YouTube">
-      <div class="eduv"></div>
-      <div class="whyit"></div>
-      <div class="vlogs"></div>
-      <div class="Reviews"></div>
-    </section>
-    <section class="Writings">
-
-    </section>
-    <section class="Testimonials">
-      <h2>Testimonials:</h2>
-
-    </section>
-    <section id="Skills">
-      <h2>My skills:</h2>
-      <img ><p>AfterFX</p>
-        Premiere Pro
-        Illustrator
-        Photoshop
-        Web Development
-        Java
-        Python
-      </p>
-    </section>
-    <h1>Just for try.....</h1>
-    <iframe style="text-align: center;"src="https://discordapp.com/widget?id=856813435537588234&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
-  <!-- </main>
     <script>//Get the button:
       mybutton = document.getElementById("myBtn");
       
@@ -1179,4 +1103,4 @@ function showSlides(n) {
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
       }</script>
 </body>
-</html> --> 
+</html>
