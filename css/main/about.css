@@ -49,7 +49,7 @@ header{
     width: 100%;
     z-index: -15;
     /* background-image: url(../images/main/Cover\ big\ web\ 50.jpg); */
-    background-image: url(/images/bg/ignitecoverblackstriphighres.jpg);
+    background-image: url(/images/bg/ignitecoverblackstriphighres.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left bottom;
