@@ -86,9 +86,8 @@ document.write('<footer>\
     <div class="fot-support">\
         <h3 style="color: rgb(0, 0, 0);">Support:</h3>\
         <div class="fot-support-icon">\
-                <a href=""><img class="icon" src="/images/payments icons/gpay.webp"></a>\
                 <a href="https://www.paypal.com/paypalme/thecgr"><img class="icon paypal"  src="/images/payments icons/paypal-logo.webp"></a>\
-                <a href=""><img  class="icon " src="/images/payments icons/paytm.webp"></a>\
+                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HxKoP3XFvuphJm" async> </script> </form>\
         </div>\
     </div>\
 </footer>\
