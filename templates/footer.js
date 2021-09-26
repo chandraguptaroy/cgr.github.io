@@ -83,7 +83,7 @@ document.write('<footer>\
         <hr color=white width="10%" size="1px" />\
         <p style="text-align: center;color: white;">Chandra Gupta Roy | @chandraguptaroy</p>\
     </div>\
-    <div class="fot-support">\
+    <div class="fot-support" id="pay-supportus">\
         <h3 style="color: rgb(0, 0, 0);">Support:</h3>\
         <div class="fot-support-icon">\
                 <a href="https://www.paypal.com/paypalme/thecgr"><img class="icon paypal"  src="/images/payments icons/paypal-logo.webp"></a>\
